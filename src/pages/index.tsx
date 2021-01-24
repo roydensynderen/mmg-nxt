@@ -1,28 +1,30 @@
 import Head from 'next/head'
 import Hero from '../components/homepage/hero'
 import Header from '../components/modules/header'
-import TriCards from '../components/homepage/tri-cards'
 import Footer from '../components/modules/footer'
+import TriCards from '../components/homepage/tri-cards'
 import HomeTalent from '../components/homepage/home-talent'
 import HomeDisease from '../components/homepage/home-disease'
 import WhyGeneTest from '../components/homepage/why-gene-test'
-// import HomeBgFull from '../../components/home-bg-full/home-bg-full'
+import HomeBgFull from '../components/homepage/home-bg-full'
 
 export default function Homepage() {
   return (
-    <div>
+    <>
       <Head>
-        <title>Map My Gene | Homepage</title>
+        <title>Map My Gene | Home</title>
       </Head>
 
-      <Header />
-      <Hero />
-      <TriCards />
-      <HomeTalent />
-      <HomeDisease />
-      <WhyGeneTest />
-      {/* <HomeBgFull /> */}
-      <Footer />
-    </div>
+      <div className='main'>
+        <Header />
+        <Hero />
+        <TriCards />
+        <HomeTalent />
+        <HomeDisease />
+        <WhyGeneTest />
+        <HomeBgFull />
+        <Footer />
+      </div>
+    </>
   )
 }

@@ -1,0 +1,34 @@
+.red-side
+  display: flex
+  flex-direction: column
+
+  @media (min-width: 768px)
+    flex-direction: row
+
+  &__image
+    width: 100%
+
+    @media (min-width: 768px)
+      width: 50%
+
+  &__contents
+    width: 100%
+    padding: 20px
+    text-align: center
+
+    @media (min-width: 768px)
+      width: 50%
+      padding: 0 5% 0 0
+      text-align: left
+
+  &__header
+    color: $red
+    font-size: 20px
+  
+  &__richtext
+    font-size: 14px
+    line-height: 24px
+    padding: 20px 0
+
+    @media (min-width: 768px)
+      line-height: 35px
