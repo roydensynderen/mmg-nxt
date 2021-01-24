@@ -18,7 +18,7 @@ export default function ContactForm() {
           <input type="text" id="fname" name="fname" placeholder="John Doe" required />
 
           <label htmlFor="email">Email*</label>
-          <input type="email" id="email" name="email" name="_replyto" placeholder="Email@address.com" required />
+          <input type="email" id="email" name="email _replyto" placeholder="Email@address.com" required />
 
           <label htmlFor="country">Country</label>  
           <select id="country" name="country">
@@ -272,7 +272,7 @@ export default function ContactForm() {
           </select>
 
           <label htmlFor="message">Message*</label>
-          <textarea className="contact-form__textarea" placeholder="Enter message" id="message" name="message" rows="4" cols="50" required></textarea>
+          <textarea className="contact-form__textarea" placeholder="Enter message" id="message" name="message" required></textarea>
 
           <button className="btn btn--small contact-form__button" type="submit">Submit</button>
         </form>

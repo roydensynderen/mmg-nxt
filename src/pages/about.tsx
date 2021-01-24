@@ -4,6 +4,7 @@ import Footer from '../components/modules/footer'
 import AboutHero from '../components/about/about-hero'
 import RedSideBanner from '../components/about/red-side-banner'
 import HonorBoard from '../components/about/honor-board'
+import Featured from '../components/about/featured'
 
 export default function About() {
   return (
@@ -17,6 +18,7 @@ export default function About() {
         <AboutHero />
         <RedSideBanner />
         <HonorBoard />
+        <Featured />
         <Footer />
       </div>
     </>
