@@ -3,6 +3,7 @@ import Header from '../../components/modules/header'
 import Footer from '../../components/modules/footer'
 import ServiceHero from '../../components/services/service-hero'
 import ServiceCards from '../../components/services/service-cards'
+import RedSideTalent from '../../components/services/red-side-talent'
 
 export default function Talent() {
   return (
@@ -13,6 +14,7 @@ export default function Talent() {
 
       <div className='main'>
         <Header />
+        <RedSideTalent />
         <ServiceHero />
         <ServiceCards />
         <Footer />

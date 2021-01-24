@@ -1,0 +1,38 @@
+.red-side-talent
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding-top: 40px
+
+  @media screen and (min-width: 1024px)
+    flex-direction: row
+
+.red-side-talent__image,
+.red-side-talent__contents
+  @media screen and (min-width: 768px)
+    width: 50%
+
+.red-side-talent__title
+  text-align: center
+  font-size: 35px
+
+  @media screen and (min-width: 1024px)
+    text-align: left
+
+.red-side-talent__contents
+  padding: 20px
+
+  @media screen and (min-width: 768px)
+    padding: 40px 60px 40px 0
+
+.red-side-talent__quote
+  font-style: italic
+  font-weight: bold
+  background: rgba($red, 0.05)
+  color: $red
+  padding: 30px
+  margin: 30px 0
+  line-height: 2
+
+  @media screen and (min-width: 768px)
+    margin: 50px 0

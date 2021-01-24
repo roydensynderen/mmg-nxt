@@ -9,7 +9,7 @@ export default function Header() {
             </div>
             <div>
               <img className="header-top-left__icon" alt="Mail" src='/assets/envelope.svg' />
-              <span>info@mapmygene.com</span>
+              <span>hello@mapmygene.io</span>
             </div>
           </div>
 
