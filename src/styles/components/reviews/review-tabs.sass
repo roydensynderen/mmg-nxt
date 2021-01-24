@@ -1,0 +1,122 @@
+.tabs
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 100%
+  margin-top: 40px
+
+.tab
+  border: none
+  border-radius: 5px 5px 0 0
+  font-weight: bold
+  width: 50%
+  padding: 20px
+  cursor: pointer
+  transition: all 0.3s ease-in-out
+  color: $red
+  background: white
+  border-top: 1px solid $lightgray
+
+  &[disabled]
+    cursor: default
+
+  &:focus,
+  &:hover:not([disabled]),
+  &.active
+    background: $red
+    color: white
+    border-top: 1px solid transparent
+
+.tab__page
+  background: $lightgray
+  display: none
+  padding: 40px 25px
+
+  @media (min-width: 1024px)
+    padding: 80px
+
+  &.active
+    display: block
+
+.tab__grid
+  @media (min-width: 768px)
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 25px
+    max-width: 1280px
+    margin: 0 auto
+
+  @media (min-width: 1024px)
+    gap: 40px
+
+.tab__card
+  display: flex
+  flex-direction: column
+  background: $white
+  text-align: center
+  padding: 40px 20px
+  height: auto
+  margin-bottom: 40px
+
+  @media (min-width: 1024px)
+    margin-bottom: 0
+    padding: 50px
+
+  &-image
+    border-radius: 50%
+    height: 100px
+    width: 100px
+    margin: 0 auto 30px
+    object-fit: cover
+
+  &-container
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 10px
+  
+  &-body
+    margin: 25px 0
+  
+  &-name
+    display: inline-block
+    font-weight: bold
+    color: $red
+    font-size: 15px
+  
+  &-divider
+    margin: 0 5px
+  
+  &-occupation
+    font-size: 15px
+  
+  &-map-marker
+    position: relative
+    top: 1px
+    right: 5px
+    height: 12px
+    width: auto
+
+  &-country
+    font-size: 12px
+
+  &-title
+    text-transform: capitalize
+    color: $red
+    font-size: 15px
+    font-weight: 500
+    margin-bottom: 20px
+
+  &-review
+    text-align: justify
+    font-size: 12px
+    line-height: 25px
+  
+  &-base
+    display: flex
+    justify-content: space-between
+    width: 100%
+  
+  &-base-image
+    object-fit: cover
+    width: 47.5%
