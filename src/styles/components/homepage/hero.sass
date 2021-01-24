@@ -1,0 +1,60 @@
+.hero
+  position: relative
+
+  &__image
+    width: 100%
+    
+    &--mobile
+      display: none
+
+  &__contents
+    position: absolute
+    top: 25%
+    left: 7.5%
+    color: $white
+
+    h1
+      padding: 10px 0
+      font-size: 40px
+
+    h2
+      font-size: 30px
+
+    h3
+      padding: 25px 0 60px
+      font-size: 25px
+      font-weight: normal
+
+  @media (max-width: 768px)
+    .hero__contents
+      top: 16%
+
+  @media (max-width: 500px)
+    .hero
+      &__image
+        display: none
+
+        &--mobile
+          display: block
+          background: url('/assets/hero--mobile.png') no-repeat center
+          padding-top: 100%
+
+      &__contents
+        position: relative
+        top: -30px
+        left: 0
+        color: $black
+        background: $lightgray
+        text-align: center
+        padding: 30px 20px
+
+        h1
+          font-size: 30px
+          padding: 0
+
+        h2
+          font-size: 30px
+
+        h3
+          padding: 25px 0
+          font-size: 18px
