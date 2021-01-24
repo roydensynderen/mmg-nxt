@@ -1,0 +1,36 @@
+.homeBgFull
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  background: url('/assets/dna-vector.png')
+  background-size: cover
+  padding: 40px 20px
+
+  &:before
+    content: ''
+    position: absolute
+    height: 100%
+    width: 100%
+    background: $black
+    opacity: 0.55
+
+  &__title-1
+    font-size: 25px
+    color: $primary
+
+  &__title-2
+    font-size: 35px
+    margin: 15px 0 30px
+
+  &__contents
+    position: relative
+    color: $white
+    text-align: center
+
+    @media (min-width: 768px)
+      width: 80%
+
+  &__p
+    font-size: 14px
+    line-height: 24px

@@ -1,0 +1,79 @@
+.homeDisease
+  position: relative
+  display: flex
+  flex-direction: column-reverse
+  background: $primary
+  overflow: visible
+
+  @media (min-width: 768px)
+    flex-direction: row-reverse
+
+  @media (min-width: 1200px)
+    height: 90vh
+    margin-bottom: 200px
+  
+  &__container
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    background: $white
+    width: 100%
+    padding: 40px 20px
+
+    @media (min-width: 768px)
+      position: absolute
+      top: 8%
+      left: 0
+      height: 85%
+
+    @media (min-width: 1200px)
+      top: 14%
+      left: 8%
+      width: 725px
+      height: 775px
+      padding: 50px
+      box-shadow: 0 15px 20px -7px $lightgray
+
+  &__title
+    font-size: 21px
+    color: $primary
+  
+  &__title-2
+    font-size: 30px
+  
+  &__content
+    line-height: 25px
+    font-size: 14px
+    margin: 20px 0
+
+  &__ul
+    position: relative
+    line-height: 30px
+    font-size: 14px
+    list-style: none
+    padding: 10px 0 35px 30px
+
+    li:before
+      position: absolute
+      display: inline-block
+      content: '✓'
+      color: red
+      text-indent: -1.5em
+  
+  &__space
+    display: none
+
+    @media (min-width: 768px)
+      width: 50%
+  
+  &__img
+    background: url('/assets/doctor_1.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: right
+    padding-top: 100%
+
+    @media (min-width: 1200px)
+      padding-top: 0
+      width: 50%

@@ -1,0 +1,54 @@
+.whyGeneTest
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+  @media (min-width: 768px)
+    flex-direction: row
+    padding: 50px 20px 40px
+
+  @media (min-width: 1024px)
+    padding: 100px 20px 0
+  
+  @media (min-width: 1200px)
+    padding: 50px 100px
+
+  &__img-container,
+  &__contents
+    @media (min-width: 768px)
+      width: 50%
+  
+  &__img
+    background-position: center
+    background: url('/assets/family.png')
+    background-repeat: no-repeat
+    padding-top: 100%
+
+    @media (min-width: 768px)
+      background-size: contain
+      min-width: 200px
+      height: 500px
+      clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%)
+      padding: 0
+  
+  &__contents
+    padding: 40px 20px
+
+    @media (min-width: 768px)
+      padding: 0 20px
+    
+    @media (min-width: 1200px)
+      padding: 50px
+  
+  &__title
+    font-size: 21px
+    color: #ED2C36
+  
+  &__title-2
+    font-size: 30px
+    font-weight: bold
+
+  &__p
+    line-height: 25px
+    font-size: 14px
+    margin-top: 20px

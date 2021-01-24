@@ -1,0 +1,43 @@
+.footer
+  width: 100%
+
+  &__top
+    display: none
+    flex-direction: column
+    justify-content: space-evenly
+    align-items: center
+    background: $primary
+    color: $white
+    padding: 40px 20px
+
+    @media (min-width: 768px)
+      padding-bottom: 50px
+
+    &-title
+      font-size: 35px
+      margin-bottom: 20px
+
+      @media (min-width: 768px)
+        margin-bottom: 50px
+
+    &-contents
+      display: flex
+      justify-content: space-around
+      align-items: center
+      width: 100%
+
+  &__btm
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 60px
+    background: $gray
+    color: $white
+    font-size: 10px
+
+    @media (min-width: 768px)
+      padding: 0 50px
+      font-size: 12px
+
+    &-flags
+      display: none
