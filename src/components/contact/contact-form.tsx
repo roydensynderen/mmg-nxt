@@ -14,13 +14,13 @@ export default function ContactForm() {
           
           <hr className="contact-form__divider" />
           
-          <label for="fname">Name*</label>
+          <label htmlFor="fname">Name*</label>
           <input type="text" id="fname" name="fname" placeholder="John Doe" required />
 
-          <label for="email">Email*</label>
+          <label htmlFor="email">Email*</label>
           <input type="email" id="email" name="email" name="_replyto" placeholder="Email@address.com" required />
 
-          <label for="country">Country</label>  
+          <label htmlFor="country">Country</label>  
           <select id="country" name="country">
             <option value="none" selected disabled hidden> 
               Select Country
@@ -271,7 +271,7 @@ export default function ContactForm() {
             <option value="Zimbabwe">Zimbabwe</option>
           </select>
 
-          <label for="message">Message*</label>
+          <label htmlFor="message">Message*</label>
           <textarea className="contact-form__textarea" placeholder="Enter message" id="message" name="message" rows="4" cols="50" required></textarea>
 
           <button className="btn btn--small contact-form__button" type="submit">Submit</button>
