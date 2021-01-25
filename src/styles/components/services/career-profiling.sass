@@ -1,0 +1,54 @@
+.cp
+  text-align: center
+  max-width: 1280px
+  margin: 0 auto
+  padding: 40px 20px
+
+  @media screen and (min-width: 1280px)
+    position: relative
+    top: -80px
+    padding: 0 40px
+
+.cp__title
+  font-size: 35px
+
+.cp__excerpt
+  color: rgba($gray, 0.5)
+  font-style: italic
+  font-weight: 500
+  font-size: 14px
+  margin: 40px auto
+
+  @media screen and (min-width: 768px)
+    width: 80%
+
+  @media screen and (min-width: 1024px)
+    width: 60%
+  
+.cp__grid
+  display: grid
+  justify-items: center
+  gap: 25px
+
+  @media screen and (min-width: 768px)
+    grid-template-columns: repeat(2, 1fr)
+    gap: 40px
+    padding: 20px 60px 0
+
+  @media screen and (min-width: 1024px)
+    grid-template-columns: repeat(3, 1fr)
+
+.cp__grid-item
+  margin-bottom: 10px
+  box-shadow: 0px 5px 5px $lightgray, 0px -5px 5px $lightgray
+
+.cp__grid-item-title
+  margin-bottom: 10px
+
+.cp__grid-item-contents
+  padding: 30px 15px
+
+.cp__grid-item-excerpt
+  font-size: 14px
+  line-height: 1.5
+  margin: 0
