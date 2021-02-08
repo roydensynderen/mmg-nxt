@@ -5,6 +5,7 @@ import ServiceHero from '../../components/services/service-hero'
 import ServiceCards from '../../components/services/service-cards'
 import RedSideTalent from '../../components/services/red-side-talent'
 import CareerProfiling from '../../components/services/career-profiling'
+import TalentAtc from '../../components/services/talent-atc'
 
 export default function Talent() {
   return (
@@ -19,6 +20,7 @@ export default function Talent() {
         <ServiceHero />
         <ServiceCards />
         <CareerProfiling />
+        <TalentAtc />
         <Footer />
       </div>
     </>
