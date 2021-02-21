@@ -1,0 +1,29 @@
+.service-talent
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+  gap: 20px
+  max-width: 1100px
+  margin: 0 auto
+  padding: 40px 20px
+
+  @media screen and (min-width: 768px)
+    flex-direction: row
+  
+  @media screen and (min-width: 1024px)
+    padding: 40px
+
+  &__contents
+    @media screen and (min-width: 768px)
+      width: 55%
+  
+  &__title
+    color: $red
+    margin-bottom: 10px
+
+    @media screen and (min-width: 1024px)
+      margin-bottom: 20px
+  
+  &__btn
+    margin-top: 10px

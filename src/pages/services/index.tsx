@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import Header from '../../components/modules/header'
 import Footer from '../../components/modules/footer'
+import ServiceTalent from '../../components/services/service-talent'
 
 export default function Services() {
   return (
@@ -12,7 +12,7 @@ export default function Services() {
 
       <div className='main'>
         <Header />
-          <Link href='/services/talent'><a style={{ color: '#0000FF', textDecoration: 'underline' }} >Inborn Talent Gene Test</a></Link>
+          <ServiceTalent />
         <Footer />
       </div>
     </>
