@@ -15,12 +15,18 @@
     padding: 40px
 
   &__contents
+    text-align: center
+
     @media screen and (min-width: 768px)
+      text-align: left
       width: 55%
   
   &__title
     color: $red
-    margin-bottom: 10px
+    margin-bottom: 20px
+
+    @media (min-width: 768px)
+      margin-bottom: 10px
 
     @media screen and (min-width: 1024px)
       margin-bottom: 20px
