@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Hero from '../components/homepage/hero'
 import Header from '../components/modules/header'
+import MobileHeader from '../components/modules/mobile-header'
 import Footer from '../components/modules/footer'
 import TriCards from '../components/homepage/tri-cards'
 import HomeTalent from '../components/homepage/home-talent'
@@ -17,6 +18,7 @@ export default function Homepage() {
 
       <div className='main'>
         <Header />
+        <MobileHeader />
         <Hero />
         <TriCards />
         <HomeTalent />

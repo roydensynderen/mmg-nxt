@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '../../components/modules/header'
+import MobileHeader from '../../components/modules/mobile-header'
 import Footer from '../../components/modules/footer'
 import ServiceHero from '../../components/services/service-hero'
 import ServiceCards from '../../components/services/service-cards'
@@ -17,6 +18,7 @@ export default function Talent() {
 
       <div className='main'>
         <Header />
+        <MobileHeader />
         <RedSideTalent />
         <ServiceHero />
         <ServiceCards />

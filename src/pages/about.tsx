@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '../components/modules/header'
+import MobileHeader from '../components/modules/mobile-header'
 import Footer from '../components/modules/footer'
 import AboutHero from '../components/about/about-hero'
 import RedSideBanner from '../components/about/red-side-banner'
@@ -15,6 +16,7 @@ export default function About() {
 
       <div className='main'>
         <Header />
+        <MobileHeader />
         <AboutHero />
         <RedSideBanner />
         <HonorBoard />
